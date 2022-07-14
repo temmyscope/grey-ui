@@ -1,12 +1,10 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-const SideBar: React.FC<{}> = () => {
-
+const mobilenav =({})=> {
   return(
-    <div id="sidebar">
-      <aside className="bg-nav w-1/5 h-screen flex fixed">
-        <nav className="mx-auto mt-16 w-11/12 pl-4">
+    <nav className="modal fixed left-0 top-0 right-0 bottom-0 h-screen z-50">
+      <aside className="modal__content h-full bg-nav z-50">
+        <div className="mx-auto mt-16 w-11/12 pl-4">
           <ul className="text-white">
             <li className="pb-8">
               <Link to='' className="flex">
@@ -33,10 +31,9 @@ const SideBar: React.FC<{}> = () => {
               </Link>
             </li>
           </ul>
-        </nav>
+        </div>
       </aside>
-    </div>
+    </nav>
   )
 }
-
-export { SideBar }
+export default mobilenav;

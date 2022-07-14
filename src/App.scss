@@ -1,0 +1,14 @@
+.search_bar {
+  border-radius: 40px;
+  border: 1px solid #FFCE00;
+  background: #fff;
+  width: 450px;
+  padding: 10px 17px;
+  input[type='search']{
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    width: 100%;
+    // padding: 10px 12px;
+  }
+}

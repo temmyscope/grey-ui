@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  @apply bg-nav
+}
+
+.modal {
+  background: rgba(0,0,0,0.3);
+}
+.modal__content {
+  min-width: 500px;
+  width: 50%;
+  font-size: 14px;
+}
